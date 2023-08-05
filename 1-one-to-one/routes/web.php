@@ -37,3 +37,9 @@ Route::get('/update', function () {
         'line_1' => '1 Eloquent Lane',
     ]);
 });
+
+Route::get('/delete', function () {
+    $user = User::find(1);
+
+    $user->address()->delete();
+});
