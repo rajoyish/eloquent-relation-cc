@@ -26,6 +26,14 @@ Route::get('/create', function () {
     $user = User::find(1);
 
     $user->address()->create([
-        'line_1' => '111 Hadsad Trail'
+        'line_1' => '111 Hadsad Trail',
+    ]);
+});
+
+Route::get('/update', function () {
+    $user = User::find(1);
+
+    $user->address()->update([
+        'line_1' => '1 Eloquent Lane',
     ]);
 });
