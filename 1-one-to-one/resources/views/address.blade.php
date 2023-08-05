@@ -1,2 +1,4 @@
-<h1>{{ $user->name }}</h1>
-<h2>{{ $user->address->line_1 }}</h2>
+@if ($user->address)
+<h1>{{ $user->address->line_1 }}</h1>
+<h3>{{ $user->name }}</h3>
+@endif

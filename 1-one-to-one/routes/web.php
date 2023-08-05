@@ -26,7 +26,7 @@ Route::get('/create', function () {
     $user = User::find(1);
 
     $user->address()->create([
-        'line_1' => '111 Hadsad Trail',
+        'line_1' => '1125 Bodpo Loop',
     ]);
 });
 
